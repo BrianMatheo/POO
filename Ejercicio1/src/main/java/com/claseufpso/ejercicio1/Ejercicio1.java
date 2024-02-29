@@ -1,5 +1,7 @@
 package com.claseufpso.ejercicio1;
 
+import people.Character;
+
 public class Ejercicio1 {
     
     public static void main(String[] args) {
@@ -10,28 +12,12 @@ public class Ejercicio1 {
         Character bart = new Character("Bart",10,'M',"Ay caramba!");
         bart.saySomething();
         
-        Character lisa = new Character("Lisa",8,'F',"de hecho");
+        Character lisa = new Character("Lisa",8,'F',"De hecho");
         lisa.saySomething();
         
-    }
-        
-        static class Character{
-            String name;
-            int age;
-            char gender;
-            String phrase;
-
-            public Character(String name, int age, char gender, String phrase) {
-                this.name = name;
-                this.age = age;
-                this.gender = gender;
-                this.phrase = phrase;
-            }
-            
-            void saySomething(){
-                System.out.println(this.phrase);
-            }
-        }
-        
-    }
-
+        Character apu = new Character();
+        apu.setName("Apu Nahasapeemapetilon");
+        apu.setPhrase("Vuelvas prontos");
+        apu.saySomething();
+    }        
+}
